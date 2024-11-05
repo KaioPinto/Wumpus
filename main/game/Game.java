@@ -11,7 +11,7 @@ public class Game {
 
     public Game() {
         this.map = new Map(8, 8);
-        this.player = new Player(new ShortestDistance());
+        this.player = new Player(new ShortestDistance ());
     }
 
     public void run() {
@@ -28,10 +28,10 @@ public class Game {
                     this.map.print();
                     break;
                 }
-//                if (space != null && space.equals(MapOfTreasure.CHARACTER)) {
-//                    System.out.println("Você encontrou o mapa!");
-//                    break;
-//                }
+                if (space != null && space.equals(MapOfTreasure.CHARACTER)) {
+                    System.out.println("Você encontrou o mapa!");
+                    break;
+                }
                 if (space != null && space.equals(Monster.CHARACTER)) {
                     System.out.println("Você encontrou um monstro e morreu!");
                     break;
